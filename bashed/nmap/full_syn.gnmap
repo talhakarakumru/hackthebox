@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sat Mar 27 21:13:47 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.68
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.68 ()	Status: Up
+Host: 10.10.10.68 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.18 ((Ubuntu))/	Ignored State: closed (65534)	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Sat Mar 27 21:14:26 2021 -- 1 IP address (1 host up) scanned in 39.63 seconds
