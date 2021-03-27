@@ -1,0 +1,99 @@
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# Copyright 2007 James Fisher
+[2K    * FUZZ: # Copyright 2007 James Fisher
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# Attribution-Share Alike 3.0 License. To view a copy of this
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# Suite 300, San Francisco, California, 94105, USA.
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA.
+
+[34m[2K[Status: 301, Size: 309, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/wiki
+[2K| --> | http://10.10.10.37/wiki/
+[2K    * FUZZ: wiki
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/
+[2K    * FUZZ: 
+
+[34m[2K[Status: 301, Size: 315, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/wp-content
+[2K| --> | http://10.10.10.37/wp-content/
+[2K    * FUZZ: wp-content
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# directory-list-2.3-medium.txt
+[2K    * FUZZ: # directory-list-2.3-medium.txt
+
+[34m[2K[Status: 301, Size: 312, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/plugins
+[2K| --> | http://10.10.10.37/plugins/
+[2K    * FUZZ: plugins
+
+[34m[2K[Status: 301, Size: 316, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/wp-includes
+[2K| --> | http://10.10.10.37/wp-includes/
+[2K    * FUZZ: wp-includes
+
+[34m[2K[Status: 301, Size: 315, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/javascript
+[2K| --> | http://10.10.10.37/javascript/
+[2K    * FUZZ: javascript
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# license, visit http://creativecommons.org/licenses/by-sa/3.0/
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# on at least 2 different hosts
+[2K    * FUZZ: # on at least 2 different hosts
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# or send a letter to Creative Commons, 171 Second Street,
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/# Priority ordered case-sensitive list, where entries were found
+[2K    * FUZZ: # Priority ordered case-sensitive list, where entries were found
+
+[34m[2K[Status: 301, Size: 313, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/wp-admin
+[2K| --> | http://10.10.10.37/wp-admin/
+[2K    * FUZZ: wp-admin
+
+[32m[2K[Status: 200, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.37/# This work is licensed under the Creative Commons
+[2K    * FUZZ: # This work is licensed under the Creative Commons
+
+[34m[2K[Status: 301, Size: 315, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.37/phpmyadmin
+[2K| --> | http://10.10.10.37/phpmyadmin/
+[2K    * FUZZ: phpmyadmin
+
+[32m[2K[Status: 200, Size: 52253, Words: 3306, Lines: 314][0m
+[2K| URL | http://10.10.10.37/
+[2K    * FUZZ: 
+
+[33m[2K[Status: 403, Size: 299, Words: 22, Lines: 12][0m
+[2K| URL | http://10.10.10.37/server-status
+[2K    * FUZZ: server-status
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Mar 28 02:00:30 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.37 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.37" start="1616886030" startstr="Sun Mar 28 02:00:30 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616886030"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616886030"/>
+<taskbegin task="SYN Stealth Scan" time="1616886030"/>
+<taskprogress task="SYN Stealth Scan" time="1616886061" percent="14.27" remaining="187" etc="1616886247"/>
+<taskprogress task="SYN Stealth Scan" time="1616886091" percent="36.29" remaining="108" etc="1616886198"/>
+<taskend task="SYN Stealth Scan" time="1616886136" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1616886136"/>
+<taskend task="Service scan" time="1616886142" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1616886146"/>
+<taskend task="NSE" time="1616886146"/>
+<taskbegin task="NSE" time="1616886146"/>
+<taskend task="NSE" time="1616886146"/>
+<host starttime="1616886031" endtime="1616886146"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.37" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-responses" count="65530"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="ProFTPD" version="1.3.5a" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.5a</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service></port>
+<port protocol="tcp" portid="8192"><state state="closed" reason="reset" reason_ttl="63"/><service name="sophos" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25565"><state state="closed" reason="reset" reason_ttl="63"/><service name="minecraft" method="table" conf="3"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="8192"/>
+<osmatch name="Linux 3.10 - 4.11" accuracy="94" line="63230">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13" accuracy="94" line="63698">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.13 or 4.2" accuracy="94" line="63776">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:3.13</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.2" accuracy="94" line="67075">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.2</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 4.4" accuracy="94" line="67239">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="94"><cpe>cpe:/o:linux:linux_kernel:4.4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16" accuracy="92" line="63998">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3.16</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.16 - 4.6" accuracy="92" line="64164">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.12" accuracy="91" line="63436">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.12</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.18" accuracy="91" line="64238">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3.18</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.2 - 4.9" accuracy="91" line="65105">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="91"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="17179705" lastboot="Thu Sep 10 05:54:02 2020"/>
+<tcpsequence index="255" difficulty="Good luck!" values="FE3F689F,C64E0278,CF1D49C,B0FF508F,3C784B9D,F97E388C"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="FFFF5DCB,FFFF5DE4,FFFF5DFD,FFFF5E16,FFFF5E2F,FFFF5E48"/>
+<times srtt="48936" rttvar="289" to="100000"/>
+</host>
+<runstats><finished time="1616886147" timestr="Sun Mar 28 02:02:27 2021" elapsed="116.59" summary="Nmap done at Sun Mar 28 02:02:27 2021; 1 IP address (1 host up) scanned in 116.59 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
