@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Thu Mar 25 16:39:22 2021 as: nmap -sS -sV -O -p- -v -T4 -Pn -oA nmap/full_syn 10.10.10.4
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.4 ()	Status: Up
+Host: 10.10.10.4 ()	Ports: 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Microsoft Windows XP microsoft-ds/, 3389/closed/tcp//ms-wbt-server///	Ignored State: filtered (65532)	Seq Index: 259	IP ID Seq: Incremental
+# Nmap done at Thu Mar 25 16:41:02 2021 -- 1 IP address (1 host up) scanned in 99.89 seconds

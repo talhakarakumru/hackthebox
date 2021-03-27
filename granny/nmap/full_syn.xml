@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sat Mar 27 18:06:47 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.15 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.15" start="1616857607" startstr="Sat Mar 27 18:06:47 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616857607"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616857607"/>
+<taskbegin task="SYN Stealth Scan" time="1616857607"/>
+<taskprogress task="SYN Stealth Scan" time="1616857638" percent="19.58" remaining="128" etc="1616857765"/>
+<taskprogress task="SYN Stealth Scan" time="1616857668" percent="54.70" remaining="51" etc="1616857719"/>
+<taskend task="SYN Stealth Scan" time="1616857699" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1616857699"/>
+<taskend task="Service scan" time="1616857705" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1616857710"/>
+<taskend task="NSE" time="1616857710"/>
+<taskbegin task="NSE" time="1616857710"/>
+<taskend task="NSE" time="1616857710"/>
+<host starttime="1616857607" endtime="1616857710"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.15" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="6.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:6.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<osmatch name="Microsoft Windows Server 2003" accuracy="98" line="71784">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="98"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="98" line="72922">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="98"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="98" line="84746">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="98"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 2" accuracy="98" line="71820">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="98"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP1" accuracy="97" line="72265">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="97"><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP Embedded SP2" accuracy="97" line="80227">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="97"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2003" accuracy="97" line="71352">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="97"><cpe>cpe:/o:microsoft:windows_server_2003</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP0 - SP2" accuracy="97" line="72056">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="97"><cpe>cpe:/o:microsoft:windows_server_2003::-</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP1 or SP2" accuracy="97" line="72519">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="97"><cpe>cpe:/o:microsoft:windows_server_2003::sp1</cpe><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola VIP1216 digital set top box (Windows CE 5.0)" accuracy="97" line="79069">
+<osclass type="media device" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="97"><cpe>cpe:/o:microsoft:windows_ce:5.0</cpe></osclass>
+<osclass type="media device" vendor="Motorola" osfamily="embedded" accuracy="97"><cpe>cpe:/h:motorola:vip1216</cpe></osclass>
+</osmatch>
+</os>
+<tcpsequence index="263" difficulty="Good luck!" values="F6AE2FE2,D0517D8E,68DA607C,45FA036E,CA16779C,4D73F495"/>
+<ipidsequence class="Busy server or unknown class" values="142B,156D,16A5,1820,192B,1A61"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<times srtt="61753" rttvar="1646" to="100000"/>
+</host>
+<runstats><finished time="1616857711" timestr="Sat Mar 27 18:08:31 2021" elapsed="103.73" summary="Nmap done at Sat Mar 27 18:08:31 2021; 1 IP address (1 host up) scanned in 103.73 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

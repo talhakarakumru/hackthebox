@@ -1,0 +1,125 @@
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# This work is licensed under the Creative Commons
+[2K    * FUZZ: # This work is licensed under the Creative Commons
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/#
+[2K    * FUZZ: #
+
+[34m[2K[Status: 301, Size: 310, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/images
+[2K| --> | https://10.10.10.7/images/
+[2K    * FUZZ: images
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# Suite 300, San Francisco, California, 94105, USA.
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA.
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# Attribution-Share Alike 3.0 License. To view a copy of this
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# or send a letter to Creative Commons, 171 Second Street,
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# Copyright 2007 James Fisher
+[2K    * FUZZ: # Copyright 2007 James Fisher
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# directory-list-2.3-small.txt
+[2K    * FUZZ: # directory-list-2.3-small.txt
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# Priority-ordered case-sensitive list, where entries were found
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# on at least 3 different hosts
+[2K    * FUZZ: # on at least 3 different hosts
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/
+[2K    * FUZZ: 
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/# license, visit http://creativecommons.org/licenses/by-sa/3.0/
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+[34m[2K[Status: 301, Size: 308, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/help
+[2K| --> | https://10.10.10.7/help/
+[2K    * FUZZ: help
+
+[34m[2K[Status: 301, Size: 310, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/themes
+[2K| --> | https://10.10.10.7/themes/
+[2K    * FUZZ: themes
+
+[34m[2K[Status: 301, Size: 311, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/modules
+[2K| --> | https://10.10.10.7/modules/
+[2K    * FUZZ: modules
+
+[34m[2K[Status: 301, Size: 308, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/mail
+[2K| --> | https://10.10.10.7/mail/
+[2K    * FUZZ: mail
+
+[34m[2K[Status: 301, Size: 309, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/admin
+[2K| --> | https://10.10.10.7/admin/
+[2K    * FUZZ: admin
+
+[34m[2K[Status: 301, Size: 310, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/static
+[2K| --> | https://10.10.10.7/static/
+[2K    * FUZZ: static
+
+[34m[2K[Status: 301, Size: 308, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/lang
+[2K| --> | https://10.10.10.7/lang/
+[2K    * FUZZ: lang
+
+[34m[2K[Status: 301, Size: 307, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/var
+[2K| --> | https://10.10.10.7/var/
+[2K    * FUZZ: var
+
+[34m[2K[Status: 301, Size: 309, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/panel
+[2K| --> | https://10.10.10.7/panel/
+[2K    * FUZZ: panel
+
+[34m[2K[Status: 301, Size: 308, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/libs
+[2K| --> | https://10.10.10.7/libs/
+[2K    * FUZZ: libs
+
+[34m[2K[Status: 301, Size: 314, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/recordings
+[2K| --> | https://10.10.10.7/recordings/
+[2K    * FUZZ: recordings
+
+[34m[2K[Status: 301, Size: 311, Words: 20, Lines: 10][0m
+[2K| URL | https://10.10.10.7/configs
+[2K| --> | https://10.10.10.7/configs/
+[2K    * FUZZ: configs
+
+[32m[2K[Status: 200, Size: 1785, Words: 103, Lines: 35][0m
+[2K| URL | https://10.10.10.7/
+[2K    * FUZZ: 
+

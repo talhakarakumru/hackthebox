@@ -1,0 +1,58 @@
+# Nmap 7.80 scan initiated Fri Mar 26 16:21:18 2021 as: nmap -sS -sV -O -p- -v -T4 -oA nmap/full_syn 10.10.10.7
+adjust_timeouts2: packet supposedly had rtt of -698139 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -698139 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -698466 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -698466 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -698803 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -698803 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -622909 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -622909 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -623255 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -623255 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -397755 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -397755 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -748263 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -748263 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.7
+Host is up (0.057s latency).
+Not shown: 65519 closed ports
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 4.3 (protocol 2.0)
+25/tcp    open  smtp       Postfix smtpd
+80/tcp    open  http       Apache httpd 2.2.3
+110/tcp   open  pop3       Cyrus pop3d 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+111/tcp   open  rpcbind    2 (RPC #100000)
+143/tcp   open  imap       Cyrus imapd 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4
+443/tcp   open  ssl/https?
+878/tcp   open  status     1 (RPC #100024)
+993/tcp   open  ssl/imap   Cyrus imapd
+995/tcp   open  pop3       Cyrus pop3d
+3306/tcp  open  mysql      MySQL (unauthorized)
+4190/tcp  open  sieve      Cyrus timsieved 2.3.7-Invoca-RPM-2.3.7-7.el5_6.4 (included w/cyrus imap)
+4445/tcp  open  upnotifyp?
+4559/tcp  open  hylafax    HylaFAX 4.3.10
+5038/tcp  open  asterisk   Asterisk Call Manager 1.1
+10000/tcp open  http       MiniServ 1.570 (Webmin httpd)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=3/26%OT=22%CT=1%CU=33240%PV=Y%DS=2%DC=I%G=Y%TM=605DE0B
+OS:0%P=x86_64-pc-linux-gnu)SEQ(SP=C1%GCD=1%ISR=C9%TI=Z%CI=Z%TS=A)SEQ(SP=C1%
+OS:GCD=1%ISR=C9%TI=Z%TS=A)OPS(O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7
+OS:%O4=M54DST11NW7%O5=M54DST11NW7%O6=M54DST11)WIN(W1=16A0%W2=16A0%W3=16A0%W
+OS:4=16A0%W5=16A0%W6=16A0)ECN(R=Y%DF=Y%T=40%W=16D0%O=M54DNNSNW7%CC=N%Q=)T1(
+OS:R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=Y%DF=Y%T=40%W=16A0%S=O%A
+OS:=S+%F=AS%O=M54DST11NW7%RD=0%Q=)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O
+OS:=%RD=0%Q=)T4(R=N)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T5(R=N)T6
+OS:(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T6(R=N)T7(R=Y%DF=Y%T=40%W=0%S=
+OS:Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=
+OS:G%RUCK=G%RUD=G)U1(R=N)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 49.710 days (since Thu Feb  4 23:22:23 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=188 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Hosts:  beep.localdomain, 127.0.0.1, example.com, localhost; OS: Unix
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri Mar 26 16:25:05 2021 -- 1 IP address (1 host up) scanned in 227.09 seconds

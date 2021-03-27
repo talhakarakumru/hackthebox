@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Mar 25 15:11:36 2021 as: nmap -sS -sV -O -p- -v -T4 -oA nmap/full_tcp 10.10.10.3 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -O -p- -v -T4 -oA nmap/full_tcp 10.10.10.3" start="1616674296" startstr="Thu Mar 25 15:11:36 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1616674296"/>
+<taskend task="Ping Scan" time="1616674296" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616674296"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616674296"/>
+<taskbegin task="SYN Stealth Scan" time="1616674296"/>
+<taskprogress task="SYN Stealth Scan" time="1616674327" percent="22.43" remaining="108" etc="1616674434"/>
+<taskprogress task="SYN Stealth Scan" time="1616674357" percent="57.91" remaining="45" etc="1616674401"/>
+<taskend task="SYN Stealth Scan" time="1616674385" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1616674385"/>
+<taskend task="Service scan" time="1616674397" extrainfo="5 services on 1 host"/>
+<taskbegin task="NSE" time="1616674400"/>
+<taskend task="NSE" time="1616674400"/>
+<taskbegin task="NSE" time="1616674400"/>
+<taskend task="NSE" time="1616674400"/>
+<host starttime="1616674296" endtime="1616674400"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.3" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65530">
+<extrareasons reason="no-responses" count="65530"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ftp" product="vsftpd" version="2.3.4" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:vsftpd:vsftpd:2.3.4</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" product="OpenSSH" version="4.7p1 Debian 8ubuntu1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.7p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="3632"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="distccd" product="distccd" version="v1" extrainfo="(GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4)" method="probed" conf="10"/></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<osmatch name="OpenWrt White Russian 0.9 (Linux 2.4.30)" accuracy="92" line="46571">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.4.30</cpe></osclass>
+</osmatch>
+<osmatch name="Control4 HC-300 home controller" accuracy="92" line="19434">
+<osclass type="remote management" vendor="Control4" osfamily="embedded" accuracy="92"/>
+</osmatch>
+<osmatch name="Dell Integrated Remote Access Controller (iDRAC6)" accuracy="92" line="21856">
+<osclass type="remote management" vendor="Dell" osfamily="embedded" accuracy="92"><cpe>cpe:/h:dell:remote_access_card:6</cpe></osclass>
+</osmatch>
+<osmatch name="Linksys WET54GS5 WAP, Tranzeo TR-CPQ-19f WAP, or Xerox WorkCentre Pro 265 printer" accuracy="92" line="44034">
+<osclass type="WAP" vendor="Linksys" osfamily="embedded" accuracy="92"><cpe>cpe:/h:linksys:wet54gs5</cpe></osclass>
+<osclass type="WAP" vendor="Tranzeo" osfamily="embedded" accuracy="92"><cpe>cpe:/h:tranzeo:tr-cpq-19f</cpe></osclass>
+<osclass type="printer" vendor="Xerox" osfamily="embedded" accuracy="92"><cpe>cpe:/h:xerox:workcentre_pro_265</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.4.21 - 2.4.31 (likely embedded)" accuracy="92" line="45420">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.4.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.4</cpe></osclass>
+</osmatch>
+<osmatch name="Citrix XenServer 5.5 (Linux 2.6.18)" accuracy="92" line="47285">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6.18</cpe></osclass>
+<osclass type="specialized" vendor="Citrix" osfamily="XenServer" osgen="5.X" accuracy="92"><cpe>cpe:/o:citrix:xenserver:5.5</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.27 - 2.6.28" accuracy="92" line="53258">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.8 - 2.6.30" accuracy="92" line="58463">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+</osmatch>
+<osmatch name="Dell iDRAC 6 remote access controller (Linux 2.6)" accuracy="92" line="59827">
+<osclass type="remote management" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="remote management" vendor="Dell" osfamily="iDRAC" osgen="6" accuracy="92"><cpe>cpe:/o:dell:idrac6_firmware</cpe></osclass>
+</osmatch>
+<osmatch name="Supermicro AOC-SIMSO+ IPMI card or Epson Artisan 837 printer" accuracy="92" line="59848">
+<osclass type="remote management" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="92"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="remote management" vendor="Supermicro" osfamily="embedded" accuracy="92"><cpe>cpe:/h:supermicro:aoc-simso+</cpe></osclass>
+<osclass type="printer" vendor="Epson" osfamily="embedded" accuracy="92"><cpe>cpe:/h:epson:artisan_837</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="42949652" lastboot="Thu Nov 14 12:45:49 2019"/>
+<tcpsequence index="198" difficulty="Good luck!" values="47D01082,47854291,47DF990A,4745472B,47887E87,48208E14"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="100HZ" values="FFFFF71B,FFFFF725,FFFFF72F,FFFFF739,FFFFF743,FFFFF74D"/>
+<times srtt="57369" rttvar="204" to="100000"/>
+</host>
+<runstats><finished time="1616674401" timestr="Thu Mar 25 15:13:21 2021" elapsed="104.66" summary="Nmap done at Thu Mar 25 15:13:21 2021; 1 IP address (1 host up) scanned in 104.66 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

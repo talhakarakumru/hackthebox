@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Fri Mar 26 20:20:57 2021 as: nmap -sC -p 22,25,80,110,111,143,443,878,993,995,3306,4190,4445,4559,5038,10000 -v -oA nmap/default_script 10.10.10.7 -->
+<nmaprun scanner="nmap" args="nmap -sC -p 22,25,80,110,111,143,443,878,993,995,3306,4190,4445,4559,5038,10000 -v -oA nmap/default_script 10.10.10.7" start="1616779257" startstr="Fri Mar 26 20:20:57 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="16" services="22,25,80,110-111,143,443,878,993,995,3306,4190,4445,4559,5038,10000"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1616779257"/>
+<taskend task="NSE" time="1616779257"/>
+<taskbegin task="NSE" time="1616779257"/>
+<taskend task="NSE" time="1616779257"/>
+<taskbegin task="Ping Scan" time="1616779257"/>
+<taskend task="Ping Scan" time="1616779258" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616779258"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616779258"/>
+<taskbegin task="SYN Stealth Scan" time="1616779258"/>
+<taskend task="SYN Stealth Scan" time="1616779258" extrainfo="16 total ports"/>
+<taskbegin task="NSE" time="1616779258"/>
+<taskend task="NSE" time="1616779549"/>
+<taskbegin task="NSE" time="1616779549"/>
+<taskend task="NSE" time="1616779549"/>
+<host starttime="1616779258" endtime="1616779549"><status state="up" reason="echo-reply" reason_ttl="63"/>
+<address addr="10.10.10.7" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  1024 ad:ee:5a:bb:69:37:fb:27:af:b8:30:72:a0:f9:6f:53 (DSA)&#xa;  2048 bc:c6:73:59:13:a1:8a:4b:55:07:50:f6:65:1d:6d:0d (RSA)"><table>
+<elem key="bits">1024</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAI04jN+Sn7/9f2k+5UteAWn8KKj3FRGuF4LyeDmo/xxuHgSsdCjYuWtNS8m7stqgNH5edUu8vZ0pzF/quX5kphWg/UOz9weGeGyzde5lfb8epRlTQ2kfbP00l+kq9ztuWaXOsZQGcSR9iKE4lLRJhRCLYPaEbuxKnYz4WhAv4yD5AAAAFQDXgQ9BbvoxeDahe/ksAac2ECqflwAAAIEAiGdIue6mgTfdz/HikSp8DB6SkVh4xjpTTZE8L/HOVpTUYtFYKYj9eG0W1WYo+lGg6SveATlp3EE/7Y6BqdtJNm0RfR8kihoqSL0VzKT7myerJWmP2EavMRPjkbXw32fVBdCGjBqMgDl/QSEn2NNDu8OAyQUVBEHrE4xPGI825qgAAACANnqx2XdVmY8agjD7eFLmS+EovCIRz2+iE+5chaljGD/27OgpGcjdZNN+xm85PPFjUKJQuWmwMVTQRdza6TSp9vvQAgFh3bUtTV3dzDCuoR1D2Ybj9p/bMPnyw62jgBPxj5lVd27LTBi8IAH2fZnct7794Y3Ge+5r4Pm8Qbrpy68=</elem>
+<elem key="type">ssh-dss</elem>
+<elem key="fingerprint">adee5abb6937fb27afb83072a0f96f53</elem>
+</table>
+<table>
+<elem key="bits">2048</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEA4SXumrUtyO/pcRLwmvnF25NG/ozHsxSVNRmTwEf7AYubgpAo4aUuvhZXg5iymwTcZd6vm46Y+TX39NQV/yT6ilAEtLbrj1PLjJl+UTS8HDIKl6QgIb1b3vuEjbVjDj1LTq0Puzx52Es0/86WJNRVwh4c9vN8MtYteMb/dE2Azk0SQMtpBP+4Lul4kQrNwl/qjg+lQ7XE+NU7Va22dpEjLv/TjHAKImQu2EqPsC99sePp8PP5LdNbda6KHsSrZXnK9hqpxnwattPHT19D94NHVmMHfea9gXN3NCI3NVfDHQsxhqVtR/LiZzpbKHldFU0lfZYH1aTdBfxvMLrVhasZcw==</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">bcc6735913a18a4b550750f6651d6d0d</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="beep.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN, "/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-title" output="Did not follow redirect to https://10.10.10.7/"><elem key="redirect_url">https://10.10.10.7/</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3" method="table" conf="3"/><script id="pop3-capabilities" output="RESP-CODES UIDL STLS EXPIRE(NEVER) TOP AUTH-RESP-CODE IMPLEMENTATION(Cyrus POP3 server v2) LOGIN-DELAY(0) PIPELINING USER APOP"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imap" method="table" conf="3"/><script id="imap-capabilities" output="Completed ACL LITERAL+ UIDPLUS OK IMAP4rev1 URLAUTHA0001 CATENATE ID LIST-SUBSCRIBED LISTEXT NAMESPACE ANNOTATEMORE RENAME CONDSTORE THREAD=ORDEREDSUBJECT X-NETSCAPE IDLE RIGHTS=kxte STARTTLS MULTIAPPEND BINARY QUOTA UNSELECT MAILBOX-REFERRALS THREAD=REFERENCES SORT=MODSEQ SORT NO IMAP4 CHILDREN ATOMIC"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/><script id="ssl-date" output="2021-03-26T18:20:58+00:00; +1h00m00s from scanner time."><elem key="delta">3600.0</elem>
+<elem key="date">2021-03-26T18:20:58+00:00</elem>
+</script></port>
+<port protocol="tcp" portid="878"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="imaps" method="table" conf="3"/><script id="imap-capabilities" output="CAPABILITY"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4190"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="sieve" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4445"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="upnotifyp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4559"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="hylafax" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+<port protocol="tcp" portid="10000"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="snet-sensor-mgmt" method="table" conf="3"/><script id="ssl-date" output="2021-03-26T18:22:43+00:00; +1h00m00s from scanner time."><elem key="delta">3600.0</elem>
+<elem key="date">2021-03-26T18:22:43+00:00</elem>
+</script><script id="sslv2" output="&#xa;  SSLv2 supported&#xa;  ciphers: &#xa;    SSL2_RC2_128_CBC_EXPORT40_WITH_MD5&#xa;    SSL2_DES_192_EDE3_CBC_WITH_MD5&#xa;    SSL2_RC4_128_EXPORT40_WITH_MD5&#xa;    SSL2_RC4_128_WITH_MD5&#xa;    SSL2_RC2_128_CBC_WITH_MD5&#xa;    SSL2_DES_64_CBC_WITH_MD5"><elem>SSLv2 supported</elem>
+<table key="ciphers">
+<elem>SSL2_RC2_128_CBC_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_DES_192_EDE3_CBC_WITH_MD5</elem>
+<elem>SSL2_RC4_128_EXPORT40_WITH_MD5</elem>
+<elem>SSL2_RC4_128_WITH_MD5</elem>
+<elem>SSL2_RC2_128_CBC_WITH_MD5</elem>
+<elem>SSL2_DES_64_CBC_WITH_MD5</elem>
+</table>
+</script></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 59m59s, deviation: 0s, median: 59m59s"><elem key="stddev">0</elem>
+<elem key="median">3599</elem>
+<elem key="count">2</elem>
+<elem key="mean">3599</elem>
+</script></hostscript><times srtt="48795" rttvar="559" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1616779549"/>
+<taskend task="NSE" time="1616779549"/>
+<taskbegin task="NSE" time="1616779549"/>
+<taskend task="NSE" time="1616779549"/>
+<runstats><finished time="1616779549" timestr="Fri Mar 26 20:25:49 2021" elapsed="292.18" summary="Nmap done at Fri Mar 26 20:25:49 2021; 1 IP address (1 host up) scanned in 292.18 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

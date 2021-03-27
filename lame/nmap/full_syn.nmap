@@ -1,0 +1,21 @@
+# Nmap 7.80 scan initiated Thu Mar 25 15:11:36 2021 as: nmap -sS -sV -O -p- -v -T4 -oA nmap/full_tcp 10.10.10.3
+Nmap scan report for 10.10.10.3
+Host is up (0.057s latency).
+Not shown: 65530 filtered ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 2.3.4
+22/tcp   open  ssh         OpenSSH 4.7p1 Debian 8ubuntu1 (protocol 2.0)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3632/tcp open  distccd     distccd v1 ((GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu4))
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Aggressive OS guesses: OpenWrt White Russian 0.9 (Linux 2.4.30) (92%), Control4 HC-300 home controller (92%), Dell Integrated Remote Access Controller (iDRAC6) (92%), Linksys WET54GS5 WAP, Tranzeo TR-CPQ-19f WAP, or Xerox WorkCentre Pro 265 printer (92%), Linux 2.4.21 - 2.4.31 (likely embedded) (92%), Citrix XenServer 5.5 (Linux 2.6.18) (92%), Linux 2.6.27 - 2.6.28 (92%), Linux 2.6.8 - 2.6.30 (92%), Dell iDRAC 6 remote access controller (Linux 2.6) (92%), Supermicro AOC-SIMSO+ IPMI card or Epson Artisan 837 printer (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 497.102 days (since Thu Nov 14 12:45:49 2019)
+TCP Sequence Prediction: Difficulty=198 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Mar 25 15:13:21 2021 -- 1 IP address (1 host up) scanned in 104.66 seconds

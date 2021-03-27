@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Mar 25 16:42:50 2021 as: nmap -p 445 -sC -v -Pn -oA nmap/port_445 10.10.10.4 -->
+<nmaprun scanner="nmap" args="nmap -p 445 -sC -v -Pn -oA nmap/port_445 10.10.10.4" start="1616679770" startstr="Thu Mar 25 16:42:50 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1616679770"/>
+<taskend task="NSE" time="1616679770"/>
+<taskbegin task="NSE" time="1616679770"/>
+<taskend task="NSE" time="1616679770"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616679771"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616679771"/>
+<taskbegin task="SYN Stealth Scan" time="1616679771"/>
+<taskend task="SYN Stealth Scan" time="1616679771" extrainfo="1 total ports"/>
+<taskbegin task="NSE" time="1616679771"/>
+<taskend task="NSE" time="1616679822"/>
+<taskbegin task="NSE" time="1616679822"/>
+<taskend task="NSE" time="1616679822"/>
+<host starttime="1616679771" endtime="1616679822"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.4" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows XP microsoft-ds" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 5d00h27m38s, deviation: 2h07m16s, median: 4d22h57m38s"><elem key="median">428258</elem>
+<elem key="count">2</elem>
+<elem key="mean">433658</elem>
+<elem key="stddev">7636</elem>
+</script><script id="nbstat" output="NetBIOS name: LEGACY, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00:50:56:b9:bf:b3 (VMware)&#xa;Names:&#xa;  LEGACY&lt;00&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  HTB&lt;00&gt;              Flags: &lt;group&gt;&lt;active&gt;&#xa;  LEGACY&lt;20&gt;           Flags: &lt;unique&gt;&lt;active&gt;&#xa;  HTB&lt;1e&gt;              Flags: &lt;group&gt;&lt;active&gt;&#xa;  HTB&lt;1d&gt;              Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;"/><script id="smb-os-discovery" output="&#xa;  OS: Windows XP (Windows 2000 LAN Manager)&#xa;  OS CPE: cpe:/o:microsoft:windows_xp::-&#xa;  Computer name: legacy&#xa;  NetBIOS computer name: LEGACY\x00&#xa;  Workgroup: HTB\x00&#xa;  System time: 2021-03-30T18:40:30+03:00&#xa;"><elem key="os">Windows 5.1</elem>
+<elem key="lanmanager">Windows 2000 LAN Manager</elem>
+<elem key="server">LEGACY\x00</elem>
+<elem key="date">2021-03-30T18:40:30+03:00</elem>
+<elem key="fqdn">legacy</elem>
+<elem key="domain_dns">legacy</elem>
+<elem key="workgroup">HTB\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_xp::-</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/></hostscript><times srtt="66583" rttvar="66583" to="332915"/>
+</host>
+<taskbegin task="NSE" time="1616679822"/>
+<taskend task="NSE" time="1616679822"/>
+<taskbegin task="NSE" time="1616679822"/>
+<taskend task="NSE" time="1616679822"/>
+<runstats><finished time="1616679822" timestr="Thu Mar 25 16:43:42 2021" elapsed="51.61" summary="Nmap done at Thu Mar 25 16:43:42 2021; 1 IP address (1 host up) scanned in 51.61 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
