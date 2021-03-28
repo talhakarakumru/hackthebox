@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Mar 28 17:57:45 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.14 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.14" start="1616943465" startstr="Sun Mar 28 17:57:45 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1616943466"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1616943466"/>
+<taskbegin task="SYN Stealth Scan" time="1616943466"/>
+<taskprogress task="SYN Stealth Scan" time="1616943497" percent="20.20" remaining="123" etc="1616943619"/>
+<taskprogress task="SYN Stealth Scan" time="1616943527" percent="55.72" remaining="49" etc="1616943575"/>
+<taskend task="SYN Stealth Scan" time="1616943561" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1616943561"/>
+<taskend task="Service scan" time="1616943567" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1616943572"/>
+<taskend task="NSE" time="1616943573"/>
+<taskbegin task="NSE" time="1616943573"/>
+<taskend task="NSE" time="1616943573"/>
+<host starttime="1616943466" endtime="1616943573"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.14" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft IIS httpd" version="6.0" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:iis:6.0</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+</os>
+<tcpsequence index="266" difficulty="Good luck!" values="278CCB28,2BE0D9C9,94DB5D1A,8506FCF3,7E19AB4C,FFD23AB5"/>
+<ipidsequence class="Busy server or unknown class" values="53BB,5481,5579,56B4,57AE,58F4"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<times srtt="63011" rttvar="3332" to="100000"/>
+</host>
+<runstats><finished time="1616943573" timestr="Sun Mar 28 17:59:33 2021" elapsed="108.07" summary="Nmap done at Sun Mar 28 17:59:33 2021; 1 IP address (1 host up) scanned in 108.07 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

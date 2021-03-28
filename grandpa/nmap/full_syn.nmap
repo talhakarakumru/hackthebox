@@ -1,0 +1,18 @@
+# Nmap 7.80 scan initiated Sun Mar 28 17:57:45 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.14
+adjust_timeouts2: packet supposedly had rtt of -193720 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -193720 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.14
+Host is up (0.063s latency).
+Not shown: 65534 filtered ports
+PORT   STATE SERVICE VERSION
+80/tcp open  http    Microsoft IIS httpd 6.0
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+TCP Sequence Prediction: Difficulty=266 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 28 17:59:33 2021 -- 1 IP address (1 host up) scanned in 108.07 seconds

@@ -26,7 +26,7 @@ Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 ## Plugins
 ![plugins](./screenshots/plugins.png)
 
-## phpMyAdmin Credential in BlockyCore.jar (BlockCore)
+## phpMyAdmin Credential in BlockyCore.jar (BlockyCore)
 
 ```
 root: 8YsqfCTnvxAUeduzjNSXe22
