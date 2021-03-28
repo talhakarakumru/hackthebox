@@ -1,0 +1,18 @@
+[32m[2K[Status: 200, Size: 96, Words: 5, Lines: 4][0m
+[2K| URL | http://10.10.10.48:32400/security
+[2K    * FUZZ: security
+
+[34m[2K[Status: 301, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.48:32400/web
+[2K| --> | http://10.10.10.48:32400/web/index.html
+[2K    * FUZZ: web
+
+[32m[2K[Status: 200, Size: 175, Words: 6, Lines: 4][0m
+[2K| URL | http://10.10.10.48:32400/identity
+[2K    * FUZZ: identity
+
+[34m[2K[Status: 301, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.48:32400/manage
+[2K| --> | http://10.10.10.48:32400/web/index.html
+[2K    * FUZZ: manage
+

@@ -1,0 +1,34 @@
+# Nmap 7.80 scan initiated Sun Mar 28 18:31:04 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.48
+adjust_timeouts2: packet supposedly had rtt of -438962 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -438962 microseconds.  Ignoring time.
+Nmap scan report for 10.10.10.48
+Host is up (0.064s latency).
+Not shown: 65529 closed ports
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 6.7p1 Debian 5+deb8u3 (protocol 2.0)
+53/tcp    open  domain  dnsmasq 2.76
+80/tcp    open  http    lighttpd 1.4.35
+1600/tcp  open  upnp    Platinum UPnP 1.0.5.13 (UPnP/1.0 DLNADOC/1.50)
+32400/tcp open  http    Plex Media Server httpd
+32469/tcp open  upnp    Platinum UPnP 1.0.5.13 (UPnP/1.0 DLNADOC/1.50)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=3/28%OT=22%CT=1%CU=39864%PV=Y%DS=2%DC=I%G=Y%TM=6060A19
+OS:6%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10D%TI=Z%CI=I%TS=8)SEQ(SP=1
+OS:04%GCD=1%ISR=10D%TI=Z%TS=8)OPS(O1=M54DST11NW6%O2=M54DST11NW6%O3=M54DNNT1
+OS:1NW6%O4=M54DST11NW6%O5=M54DST11NW6%O6=M54DST11)WIN(W1=7120%W2=7120%W3=71
+OS:20%W4=7120%W5=7120%W6=7120)ECN(R=N)ECN(R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW6
+OS:%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(
+OS:R=N)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z
+OS:%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G
+OS:%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Uptime guess: 197.261 days (since Sat Sep 12 12:16:54 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=260 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 28 18:32:38 2021 -- 1 IP address (1 host up) scanned in 94.74 seconds

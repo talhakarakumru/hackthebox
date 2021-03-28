@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Sun Mar 28 18:31:04 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.48
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.48 ()	Status: Up
+Host: 10.10.10.48 ()	Ports: 22/open/tcp//ssh//OpenSSH 6.7p1 Debian 5+deb8u3 (protocol 2.0)/, 53/open/tcp//domain//dnsmasq 2.76/, 80/open/tcp//http//lighttpd 1.4.35/, 1600/open/tcp//upnp//Platinum UPnP 1.0.5.13 (UPnP|1.0 DLNADOC|1.50)/, 32400/open/tcp//http//Plex Media Server httpd/, 32469/open/tcp//upnp//Platinum UPnP 1.0.5.13 (UPnP|1.0 DLNADOC|1.50)/	Ignored State: closed (65529)	Seq Index: 260	IP ID Seq: All zeros
+# Nmap done at Sun Mar 28 18:32:38 2021 -- 1 IP address (1 host up) scanned in 94.74 seconds

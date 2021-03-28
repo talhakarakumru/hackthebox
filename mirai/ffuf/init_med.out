@@ -1,0 +1,9 @@
+[34m[2K[Status: 301, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.48/admin
+[2K| --> | http://10.10.10.48/admin/
+[2K    * FUZZ: admin
+
+[32m[2K[Status: 200, Size: 18, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.48/versions
+[2K    * FUZZ: versions
+
