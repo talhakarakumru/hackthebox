@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Mon Mar 29 02:25:59 2021 as: nmap -p 443 -&#45;script ssl-heartbleed -oA nmap/heartbleed 10.10.10.79 -->
+<nmaprun scanner="nmap" args="nmap -p 443 -&#45;script ssl-heartbleed -oA nmap/heartbleed 10.10.10.79" start="1616973959" startstr="Mon Mar 29 02:25:59 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="443"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1616973959" endtime="1616973960"><status state="up" reason="reset" reason_ttl="63"/>
+<address addr="10.10.10.79" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="https" method="table" conf="3"/><script id="ssl-heartbleed" output="&#xa;  VULNERABLE:&#xa;  The Heartbleed Bug is a serious vulnerability in the popular OpenSSL cryptographic software library. It allows for stealing information intended to be protected by SSL/TLS encryption.&#xa;    State: VULNERABLE&#xa;    Risk factor: High&#xa;      OpenSSL versions 1.0.1 and 1.0.2-beta releases (including 1.0.1f and 1.0.2-beta1) of OpenSSL are affected by the Heartbleed bug. The bug allows for reading memory of systems protected by the vulnerable OpenSSL versions and could allow for disclosure of otherwise encrypted confidential information as well as the encryption keys themselves.&#xa;          &#xa;    References:&#xa;      http://cvedetails.com/cve/2014-0160/&#xa;      http://www.openssl.org/news/secadv_20140407.txt &#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160&#xa;"><table key="NMAP-1">
+<elem key="title">The Heartbleed Bug is a serious vulnerability in the popular OpenSSL cryptographic software library. It allows for stealing information intended to be protected by SSL/TLS encryption.</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="description">
+<elem>OpenSSL versions 1.0.1 and 1.0.2-beta releases (including 1.0.1f and 1.0.2-beta1) of OpenSSL are affected by the Heartbleed bug. The bug allows for reading memory of systems protected by the vulnerable OpenSSL versions and could allow for disclosure of otherwise encrypted confidential information as well as the encryption keys themselves.&#xa;    </elem>
+</table>
+<table key="refs">
+<elem>http://cvedetails.com/cve/2014-0160/</elem>
+<elem>http://www.openssl.org/news/secadv_20140407.txt </elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-0160</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="49464" rttvar="37407" to="199092"/>
+</host>
+<runstats><finished time="1616973960" timestr="Mon Mar 29 02:26:00 2021" elapsed="0.67" summary="Nmap done at Mon Mar 29 02:26:00 2021; 1 IP address (1 host up) scanned in 0.67 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

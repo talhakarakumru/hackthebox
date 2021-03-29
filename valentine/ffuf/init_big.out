@@ -1,0 +1,149 @@
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Priority-ordered case-sensitive list, where entries were found
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/index.php
+[2K    * FUZZ: index.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# This work is licensed under the Creative Commons.php
+[2K    * FUZZ: # This work is licensed under the Creative Commons.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Priority-ordered case-sensitive list, where entries were found.php
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Copyright 2007 James Fisher.php
+[2K    * FUZZ: # Copyright 2007 James Fisher.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Attribution-Share Alike 3.0 License. To view a copy of this
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Copyright 2007 James Fisher
+[2K    * FUZZ: # Copyright 2007 James Fisher
+
+[34m[2K[Status: 301, Size: 308, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.79/dev
+[2K| --> | http://10.10.10.79/dev/
+[2K    * FUZZ: dev
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# or send a letter to Creative Commons, 171 Second Street,
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# license, visit http://creativecommons.org/licenses/by-sa/3.0/
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Attribution-Share Alike 3.0 License. To view a copy of this.php
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# license, visit http://creativecommons.org/licenses/by-sa/3.0/.php
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/index
+[2K    * FUZZ: index
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# or send a letter to Creative Commons, 171 Second Street,.php
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Suite 300, San Francisco, California, 94105, USA.
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA.
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# on at least 1 host.php
+[2K    * FUZZ: # on at least 1 host.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# directory-list-2.3-big.txt.php
+[2K    * FUZZ: # directory-list-2.3-big.txt.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# on at least 1 host
+[2K    * FUZZ: # on at least 1 host
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# This work is licensed under the Creative Commons
+[2K    * FUZZ: # This work is licensed under the Creative Commons
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# directory-list-2.3-big.txt
+[2K    * FUZZ: # directory-list-2.3-big.txt
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/
+[2K    * FUZZ: 
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/# Suite 300, San Francisco, California, 94105, USA..php
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA..php
+
+[32m[2K[Status: 200, Size: 554, Words: 73, Lines: 28][0m
+[2K| URL | http://10.10.10.79/encode
+[2K    * FUZZ: encode
+
+[32m[2K[Status: 200, Size: 554, Words: 73, Lines: 28][0m
+[2K| URL | http://10.10.10.79/encode.php
+[2K    * FUZZ: encode.php
+
+[32m[2K[Status: 200, Size: 552, Words: 73, Lines: 26][0m
+[2K| URL | http://10.10.10.79/decode.php
+[2K    * FUZZ: decode.php
+
+[32m[2K[Status: 200, Size: 552, Words: 73, Lines: 26][0m
+[2K| URL | http://10.10.10.79/decode
+[2K    * FUZZ: decode
+
+[32m[2K[Status: 200, Size: 147692, Words: 627, Lines: 620][0m
+[2K| URL | http://10.10.10.79/omg
+[2K    * FUZZ: omg
+
+[32m[2K[Status: 200, Size: 38, Words: 2, Lines: 2][0m
+[2K| URL | http://10.10.10.79/
+[2K    * FUZZ: 
+
+[33m[2K[Status: 403, Size: 292, Words: 21, Lines: 11][0m
+[2K| URL | http://10.10.10.79/server-status
+[2K    * FUZZ: server-status
+
