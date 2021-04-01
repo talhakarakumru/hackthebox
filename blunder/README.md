@@ -35,13 +35,6 @@ Fixed security vulnerability for Bypass brute force protection. Thanks to @rasta
 ...
 ```
 
-### Related Topics
-https://www.cvedetails.com/cve/CVE-2019-16113/
-
-https://nvd.nist.gov/vuln/detail/CVE-2019-16113
-
-https://www.exploit-db.com/exploits/47699
-
 ## Admin Credentials via Brute Force
 ```
 fergus: RolandDeschain
