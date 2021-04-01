@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Thu Apr  1 01:28:56 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.191 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.191" start="1617229736" startstr="Thu Apr  1 01:28:56 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1617229736"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1617229736"/>
+<taskbegin task="SYN Stealth Scan" time="1617229736"/>
+<taskprogress task="SYN Stealth Scan" time="1617229767" percent="22.29" remaining="109" etc="1617229875"/>
+<taskprogress task="SYN Stealth Scan" time="1617229797" percent="58.04" remaining="45" etc="1617229841"/>
+<taskend task="SYN Stealth Scan" time="1617229825" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1617229825"/>
+<taskend task="Service scan" time="1617229831" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1617229835"/>
+<taskend task="NSE" time="1617229835"/>
+<taskbegin task="NSE" time="1617229835"/>
+<taskend task="NSE" time="1617229835"/>
+<host starttime="1617229736" endtime="1617229835"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.191" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="closed" reason="reset" reason_ttl="63"/><service name="ftp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.41" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.41</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="80"/>
+<portused state="closed" proto="tcp" portid="21"/>
+<osmatch name="HP P2000 G3 NAS device" accuracy="91" line="34647">
+<osclass type="storage-misc" vendor="HP" osfamily="embedded" accuracy="91"><cpe>cpe:/h:hp:p2000_g3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32" accuracy="90" line="55463">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.1" accuracy="90" line="56315">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti AirMax NanoStation WAP (Linux 2.6.32)" accuracy="90" line="61488">
+<osclass type="WAP" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:2.6.32</cpe></osclass>
+<osclass type="WAP" vendor="Ubiquiti" osfamily="embedded" accuracy="90"><cpe>cpe:/h:ubnt:airmax_nanostation</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.7" accuracy="90" line="65676">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="90"><cpe>cpe:/o:linux:linux_kernel:3.7</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 2.6.32 - 3.13" accuracy="89" line="56411">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.0 - 3.2" accuracy="89" line="62456">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+</osmatch>
+<osmatch name="Linux 3.3" accuracy="89" line="65197">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:3.3</cpe></osclass>
+</osmatch>
+<osmatch name="Infomir MAG-250 set-top box" accuracy="89" line="59437">
+<osclass type="media device" vendor="Linux" osfamily="Linux" osgen="2.6.X" accuracy="89"><cpe>cpe:/o:linux:linux_kernel:2.6</cpe></osclass>
+<osclass type="media device" vendor="Infomir" osfamily="embedded" accuracy="89"><cpe>cpe:/h:infomir:mag-250</cpe></osclass>
+</osmatch>
+<osmatch name="Ubiquiti AirOS 5.5.9" accuracy="89" line="102769">
+<osclass type="WAP" vendor="Ubiquiti" osfamily="AirOS" osgen="5.X" accuracy="89"><cpe>cpe:/o:ubnt:airos:5.5.9</cpe></osclass>
+</osmatch>
+</os>
+<uptime seconds="284586" lastboot="Sun Mar 28 18:27:29 2021"/>
+<tcpsequence index="258" difficulty="Good luck!" values="A4F5D853,CED64669,76AFCFE8,3E87904D,3F9D05B4,7217E409"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="1000HZ" values="10F66DF3,10F66E57,10F66EBB,10F66F1F,10F66F83,10F66FE7"/>
+<times srtt="50324" rttvar="148" to="100000"/>
+</host>
+<runstats><finished time="1617229835" timestr="Thu Apr  1 01:30:35 2021" elapsed="99.97" summary="Nmap done at Thu Apr  1 01:30:35 2021; 1 IP address (1 host up) scanned in 99.97 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

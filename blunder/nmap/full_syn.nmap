@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Thu Apr  1 01:28:56 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.191
+Nmap scan report for 10.10.10.191
+Host is up (0.050s latency).
+Not shown: 65533 filtered ports
+PORT   STATE  SERVICE VERSION
+21/tcp closed ftp
+80/tcp open   http    Apache httpd 2.4.41 ((Ubuntu))
+Aggressive OS guesses: HP P2000 G3 NAS device (91%), Linux 2.6.32 (90%), Linux 2.6.32 - 3.1 (90%), Ubiquiti AirMax NanoStation WAP (Linux 2.6.32) (90%), Linux 3.7 (90%), Linux 2.6.32 - 3.13 (89%), Linux 3.0 - 3.2 (89%), Linux 3.3 (89%), Infomir MAG-250 set-top box (89%), Ubiquiti AirOS 5.5.9 (89%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 3.294 days (since Sun Mar 28 18:27:29 2021)
+TCP Sequence Prediction: Difficulty=258 (Good luck!)
+IP ID Sequence Generation: All zeros
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr  1 01:30:35 2021 -- 1 IP address (1 host up) scanned in 99.97 seconds
