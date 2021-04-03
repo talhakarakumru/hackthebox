@@ -1,0 +1,34 @@
+# Nmap 7.80 scan initiated Sat Apr  3 23:01:18 2021 as: nmap -sS -sV -O -p- -v -Pn -T4 -oA nmap/full_syn 10.10.10.117
+Nmap scan report for 10.10.10.117
+Host is up (0.051s latency).
+Not shown: 65528 closed ports
+PORT      STATE SERVICE VERSION
+22/tcp    open  ssh     OpenSSH 6.7p1 Debian 5+deb8u4 (protocol 2.0)
+80/tcp    open  http    Apache httpd 2.4.10 ((Debian))
+111/tcp   open  rpcbind 2-4 (RPC #100000)
+6697/tcp  open  irc     UnrealIRCd
+8067/tcp  open  irc     UnrealIRCd
+56539/tcp open  status  1 (RPC #100024)
+65534/tcp open  irc     UnrealIRCd
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.80%E=4%D=4/3%OT=22%CT=1%CU=34057%PV=Y%DS=2%DC=I%G=Y%TM=6068C9D8
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=103%GCD=1%ISR=10B%TI=Z%CI=I%II=I%TS=8)OPS(
+OS:O1=M54DST11NW7%O2=M54DST11NW7%O3=M54DNNT11NW7%O4=M54DST11NW7%O5=M54DST11
+OS:NW7%O6=M54DST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120)ECN(
+OS:R=Y%DF=Y%T=40%W=7210%O=M54DNNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Uptime guess: 197.261 days (since Fri Sep 18 16:46:34 2020)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=259 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: Host: irked.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Apr  3 23:02:32 2021 -- 1 IP address (1 host up) scanned in 74.53 seconds
