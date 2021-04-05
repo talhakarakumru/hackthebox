@@ -1,0 +1,89 @@
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# on at least 1 host
+[2K    * FUZZ: # on at least 1 host
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# Attribution-Share Alike 3.0 License. To view a copy of this
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# This work is licensed under the Creative Commons
+[2K    * FUZZ: # This work is licensed under the Creative Commons
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# Priority-ordered case-sensitive list, where entries were found
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found
+
+[34m[2K[Status: 301, Size: 313, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.160/upload
+[2K| --> | http://10.10.10.160/upload/
+[2K    * FUZZ: upload
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# Copyright 2007 James Fisher
+[2K    * FUZZ: # Copyright 2007 James Fisher
+
+[34m[2K[Status: 301, Size: 310, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.160/css
+[2K| --> | http://10.10.10.160/css/
+[2K    * FUZZ: css
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# directory-list-2.3-big.txt
+[2K    * FUZZ: # directory-list-2.3-big.txt
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/#
+[2K    * FUZZ: #
+
+[34m[2K[Status: 301, Size: 309, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.160/js
+[2K| --> | http://10.10.10.160/js/
+[2K    * FUZZ: js
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# license, visit http://creativecommons.org/licenses/by-sa/3.0/
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/
+[2K    * FUZZ: 
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# Suite 300, San Francisco, California, 94105, USA.
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA.
+
+[34m[2K[Status: 301, Size: 313, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.160/images
+[2K| --> | http://10.10.10.160/images/
+[2K    * FUZZ: images
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/# or send a letter to Creative Commons, 171 Second Street,
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,
+
+[34m[2K[Status: 301, Size: 312, Words: 20, Lines: 10][0m
+[2K| URL | http://10.10.10.160/fonts
+[2K| --> | http://10.10.10.160/fonts/
+[2K    * FUZZ: fonts
+
+[32m[2K[Status: 200, Size: 3842, Words: 1027, Lines: 92][0m
+[2K| URL | http://10.10.10.160/
+[2K    * FUZZ: 
+
+[33m[2K[Status: 403, Size: 300, Words: 22, Lines: 12][0m
+[2K| URL | http://10.10.10.160/server-status
+[2K    * FUZZ: server-status
+
