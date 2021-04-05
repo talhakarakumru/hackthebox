@@ -66,7 +66,7 @@ john matt_id_rsa.john --wordlist=/usr/share/wordlists/rockyou
 computer2008     (ssh/matt_id_rsa) 
 ```
 
-## Privilege Escalatio #1
+## Privilege Escalation #1
 Used the password of `SSH RSA private key` to login as `Matt` user.
 ```
 redis@Postman:/opt$ su Matt
