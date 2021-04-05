@@ -88,7 +88,7 @@ Matt@Postman:~$ cat user.txt
 02505f44b4fbd37b91014930f2339824
 ```
 
-## ## Encrypted RSA Private Key #2 (Matt)
+## Encrypted RSA Private Key #2 (Matt)
 ```
 -----BEGIN RSA PRIVATE KEY-----
 Proc-Type: 4,ENCRYPTED
