@@ -1,0 +1,124 @@
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# directory-list-2.3-big.txt.php
+[2K    * FUZZ: # directory-list-2.3-big.txt.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Copyright 2007 James Fisher
+[2K    * FUZZ: # Copyright 2007 James Fisher
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/
+[2K    * FUZZ: 
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# on at least 1 host.php
+[2K    * FUZZ: # on at least 1 host.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Suite 300, San Francisco, California, 94105, USA..php
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA..php
+
+[33m[2K[Status: 403, Size: 291, Words: 22, Lines: 12][0m
+[2K| URL | http://10.10.10.181/.php
+[2K    * FUZZ: .php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# on at least 1 host
+[2K    * FUZZ: # on at least 1 host
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Priority-ordered case-sensitive list, where entries were found.php
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Priority-ordered case-sensitive list, where entries were found
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# or send a letter to Creative Commons, 171 Second Street,.php
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# This work is licensed under the Creative Commons.php
+[2K    * FUZZ: # This work is licensed under the Creative Commons.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# license, visit http://creativecommons.org/licenses/by-sa/3.0/
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# directory-list-2.3-big.txt
+[2K    * FUZZ: # directory-list-2.3-big.txt
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Suite 300, San Francisco, California, 94105, USA.
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA.
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# or send a letter to Creative Commons, 171 Second Street,
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#
+[2K    * FUZZ: #
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/#.php
+[2K    * FUZZ: #.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Attribution-Share Alike 3.0 License. To view a copy of this.php
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Copyright 2007 James Fisher.php
+[2K    * FUZZ: # Copyright 2007 James Fisher.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# license, visit http://creativecommons.org/licenses/by-sa/3.0/.php
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/.php
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# This work is licensed under the Creative Commons
+[2K    * FUZZ: # This work is licensed under the Creative Commons
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/# Attribution-Share Alike 3.0 License. To view a copy of this
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this
+
+[32m[2K[Status: 200, Size: 1113, Words: 109, Lines: 45][0m
+[2K| URL | http://10.10.10.181/
+[2K    * FUZZ: 
+
+[33m[2K[Status: 403, Size: 291, Words: 22, Lines: 12][0m
+[2K| URL | http://10.10.10.181/.php
+[2K    * FUZZ: .php
+
+[33m[2K[Status: 403, Size: 300, Words: 22, Lines: 12][0m
+[2K| URL | http://10.10.10.181/server-status
+[2K    * FUZZ: server-status
+
