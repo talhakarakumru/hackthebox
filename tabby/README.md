@@ -89,7 +89,7 @@ tomcat:$3cureP4s5w0rd123!
 ![tomcat_admin_gui](./screenshots/tomcat_admin_gui.png)
 
 ## Tomcat Text Interface
-![tomcat_text](/screenshots/tomcat_text.png)
+![tomcat_text](./screenshots/tomcat_text.png)
 
 ## Tomcat Upload War File via Text Interface
 Uploaded a `war` file by using tomcat's text interface.
