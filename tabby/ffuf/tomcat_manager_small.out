@@ -1,0 +1,222 @@
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# directory-list-2.3-small.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # directory-list-2.3-small.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: #.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: #.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# directory-list-2.3-small.txt.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # directory-list-2.3-small.txt.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: #.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: #.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# This work is licensed under the Creative Commons.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # This work is licensed under the Creative Commons.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Attribution-Share Alike 3.0 License. To view a copy of this.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: #.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Copyright 2007 James Fisher
+[2K| --> | /manager/html
+[2K    * FUZZ: # Copyright 2007 James Fisher
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Suite 300, San Francisco, California, 94105, USA..jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA..jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# on at least 3 different hosts.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # on at least 3 different hosts.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: #.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/images
+[2K| --> | /manager/images/
+[2K    * FUZZ: images
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# or send a letter to Creative Commons, 171 Second Street,.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#
+[2K| --> | /manager/html
+[2K    * FUZZ: #
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# or send a letter to Creative Commons, 171 Second Street,.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/
+[2K| --> | /manager/html
+[2K    * FUZZ: 
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Priority-ordered case-sensitive list, where entries were found
+[2K| --> | /manager/html
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Copyright 2007 James Fisher.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # Copyright 2007 James Fisher.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: #.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Suite 300, San Francisco, California, 94105, USA..txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA..txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# This work is licensed under the Creative Commons
+[2K| --> | /manager/html
+[2K    * FUZZ: # This work is licensed under the Creative Commons
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# on at least 3 different hosts
+[2K| --> | /manager/html
+[2K    * FUZZ: # on at least 3 different hosts
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Suite 300, San Francisco, California, 94105, USA.
+[2K| --> | /manager/html
+[2K    * FUZZ: # Suite 300, San Francisco, California, 94105, USA.
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Attribution-Share Alike 3.0 License. To view a copy of this.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Copyright 2007 James Fisher.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # Copyright 2007 James Fisher.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# on at least 3 different hosts.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # on at least 3 different hosts.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#
+[2K| --> | /manager/html
+[2K    * FUZZ: #
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Priority-ordered case-sensitive list, where entries were found.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#
+[2K| --> | /manager/html
+[2K    * FUZZ: #
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#
+[2K| --> | /manager/html
+[2K    * FUZZ: #
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# or send a letter to Creative Commons, 171 Second Street,
+[2K| --> | /manager/html
+[2K    * FUZZ: # or send a letter to Creative Commons, 171 Second Street,
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# directory-list-2.3-small.txt.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # directory-list-2.3-small.txt.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Priority-ordered case-sensitive list, where entries were found.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # Priority-ordered case-sensitive list, where entries were found.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# Attribution-Share Alike 3.0 License. To view a copy of this
+[2K| --> | /manager/html
+[2K    * FUZZ: # Attribution-Share Alike 3.0 License. To view a copy of this
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/index.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: index.jsp
+
+[33m[2K[Status: 401, Size: 2499, Words: 457, Lines: 64][0m
+[2K| URL | http://10.10.10.194:8080/manager/html
+[2K    * FUZZ: html
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# license, visit http://creativecommons.org/licenses/by-sa/3.0/.jsp
+[2K| --> | /manager/html
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/.jsp
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# This work is licensed under the Creative Commons.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # This work is licensed under the Creative Commons.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# license, visit http://creativecommons.org/licenses/by-sa/3.0/.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/#.txt
+[2K| --> | /manager/html
+[2K    * FUZZ: #.txt
+
+[34m[2K[Status: 302, Size: 0, Words: 1, Lines: 1][0m
+[2K| URL | http://10.10.10.194:8080/manager/# license, visit http://creativecommons.org/licenses/by-sa/3.0/
+[2K| --> | /manager/html
+[2K    * FUZZ: # license, visit http://creativecommons.org/licenses/by-sa/3.0/
+
+[33m[2K[Status: 401, Size: 2499, Words: 457, Lines: 64][0m
+[2K| URL | http://10.10.10.194:8080/manager/text
+[2K    * FUZZ: text
+
+[33m[2K[Status: 401, Size: 2499, Words: 457, Lines: 64][0m
+[2K| URL | http://10.10.10.194:8080/manager/status
+[2K    * FUZZ: status
+

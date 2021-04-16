@@ -1,0 +1,5 @@
+# Nmap 7.80 scan initiated Fri Apr 16 15:40:40 2021 as: nmap -sS -sV -O -p- -v -T4 -Pn -oA nmap/full_syn 10.10.10.194
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.194 ()	Status: Up
+Host: 10.10.10.194 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 8080/open/tcp//http//Apache Tomcat/	Ignored State: closed (65532)	Seq Index: 261	IP ID Seq: All zeros
+# Nmap done at Fri Apr 16 15:41:27 2021 -- 1 IP address (1 host up) scanned in 47.55 seconds
