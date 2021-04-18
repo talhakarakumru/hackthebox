@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Sun Apr 18 01:30:46 2021 as: nmap -sS -sV -O -p- -v -T4 -Pn -oA nmap/full_syn 10.10.10.180 -->
+<nmaprun scanner="nmap" args="nmap -sS -sV -O -p- -v -T4 -Pn -oA nmap/full_syn 10.10.10.180" start="1618698646" startstr="Sun Apr 18 01:30:46 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="1"/>
+<debugging level="0"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1618698646"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1618698646"/>
+<taskbegin task="SYN Stealth Scan" time="1618698646"/>
+<taskprogress task="SYN Stealth Scan" time="1618698677" percent="4.17" remaining="713" etc="1618699389"/>
+<taskprogress task="SYN Stealth Scan" time="1618698707" percent="12.61" remaining="423" etc="1618699130"/>
+<taskprogress task="SYN Stealth Scan" time="1618698737" percent="21.32" remaining="336" etc="1618699073"/>
+<taskprogress task="SYN Stealth Scan" time="1618698767" percent="30.06" remaining="282" etc="1618699049"/>
+<taskprogress task="SYN Stealth Scan" time="1618698797" percent="38.80" remaining="239" etc="1618699035"/>
+<taskprogress task="SYN Stealth Scan" time="1618698827" percent="47.51" remaining="200" etc="1618699027"/>
+<taskprogress task="SYN Stealth Scan" time="1618698857" percent="56.24" remaining="165" etc="1618699021"/>
+<taskprogress task="SYN Stealth Scan" time="1618698887" percent="64.89" remaining="131" etc="1618699017"/>
+<taskprogress task="SYN Stealth Scan" time="1618698926" percent="72.59" remaining="106" etc="1618699032"/>
+<taskprogress task="SYN Stealth Scan" time="1618698980" percent="79.46" remaining="87" etc="1618699066"/>
+<taskprogress task="SYN Stealth Scan" time="1618699019" percent="85.21" remaining="65" etc="1618699084"/>
+<taskprogress task="SYN Stealth Scan" time="1618699055" percent="90.52" remaining="43" etc="1618699098"/>
+<taskend task="SYN Stealth Scan" time="1618699124" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1618699124"/>
+<taskprogress task="Service scan" time="1618699168" percent="50.00" remaining="44" etc="1618699212"/>
+<taskprogress task="Service scan" time="1618699173" percent="50.00" remaining="50" etc="1618699222"/>
+<taskend task="Service scan" time="1618699178" extrainfo="16 services on 1 host"/>
+<taskbegin task="NSE" time="1618699189"/>
+<taskend task="NSE" time="1618699189"/>
+<taskbegin task="NSE" time="1618699189"/>
+<taskend task="NSE" time="1618699224"/>
+<host starttime="1618698646" endtime="1618699224"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.10.10.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65519">
+<extrareasons reason="resets" count="65519"/>
+</extraports>
+<port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="ftp" product="Microsoft ftpd" ostype="Windows" method="probed" conf="10"><cpe>cpe:/a:microsoft:ftp_service</cpe><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2049"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mountd" version="1-3" extrainfo="RPC #100005" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49678"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49679"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="21"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="32605"/>
+<osmatch name="Microsoft Windows Server 2012" accuracy="93" line="75054">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="93"><cpe>cpe:/o:microsoft:windows_server_2012</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Vista SP1" accuracy="92" line="79652">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Vista" accuracy="92"><cpe>cpe:/o:microsoft:windows_vista::sp1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Longhorn" accuracy="92" line="78352">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="Longhorn" accuracy="92"><cpe>cpe:/o:microsoft:windows</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 R2" accuracy="91" line="75279">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2012 R2 Update 1" accuracy="91" line="75621">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2012:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2016 build 10586 - 14393" accuracy="91" line="75783">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2016" accuracy="91"><cpe>cpe:/o:microsoft:windows_server_2016</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7, Windows Server 2012, or Windows 8.1 Update 1" accuracy="91" line="77414">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7:::ultimate</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2012" accuracy="91"><cpe>cpe:/o:microsoft:windows_2012</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="8.1" accuracy="91"><cpe>cpe:/o:microsoft:windows_8.1</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 10 1703" accuracy="90" line="69486">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="10" accuracy="90"><cpe>cpe:/o:microsoft:windows_10:1703</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 R2" accuracy="90" line="74406">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="90"><cpe>cpe:/o:microsoft:windows_server_2008:r2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2008 SP2" accuracy="90" line="74867">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2008" accuracy="90"><cpe>cpe:/o:microsoft:windows_server_2008::sp2</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.80%E=4%D=4/18%OT=21%CT=1%CU=32605%PV=Y%DS=2%DC=I%G=Y%TM=607B63D&#xa;OS:8%P=x86_64-pc-linux-gnu)SEQ(SP=102%GCD=1%ISR=10B%TI=I%CI=I%II=I%SS=S%TS=&#xa;OS:U)SEQ(SP=102%GCD=1%ISR=10B%CI=I%II=I%TS=U)OPS(O1=M54DNW8NNS%O2=M54DNW8NN&#xa;OS:S%O3=M54DNW8%O4=M54DNW8NNS%O5=M54DNW8NNS%O6=M54DNNS)WIN(W1=FFFF%W2=FFFF%&#xa;OS:W3=FFFF%W4=FFFF%W5=FFFF%W6=FF70)ECN(R=Y%DF=Y%T=80%W=FFFF%O=M54DNW8NNS%CC&#xa;OS:=Y%Q=)T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=Y%DF=Y%T=80%W=0%S=Z%A=&#xa;OS:S%F=AR%O=%RD=0%Q=)T3(R=Y%DF=Y%T=80%W=0%S=Z%A=O%F=AR%O=%RD=0%Q=)T4(R=Y%DF&#xa;OS:=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=80%W=0%S=Z%A=S+%F=AR%O=&#xa;OS:%RD=0%Q=)T6(R=Y%DF=Y%T=80%W=0%S=A%A=O%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=80%W=&#xa;OS:0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=80%IPL=164%UN=0%RIPL=G%RID=G%RI&#xa;OS:PCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=80%CD=Z)&#xa;"/>
+</os>
+<distance value="2"/>
+<tcpsequence index="258" difficulty="Good luck!" values="D41C858B,FC862BE7,2011BA32,6FDD5E3C,5869190,B8D97B31"/>
+<ipidsequence class="Incremental" values="493E,493F,4940,4941,4942,4943"/>
+<tcptssequence class="none returned (unsupported)"/>
+<times srtt="59995" rttvar="302" to="100000"/>
+</host>
+<runstats><finished time="1618699224" timestr="Sun Apr 18 01:40:24 2021" elapsed="578.44" summary="Nmap done at Sun Apr 18 01:40:24 2021; 1 IP address (1 host up) scanned in 578.44 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
