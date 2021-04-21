@@ -1,0 +1,627 @@
+[33m
+[V] [0m[35mDependent program "nmblookup" found in /usr/bin/nmblookup
+
+[0m[33m
+[V] [0m[35mDependent program "net" found in /usr/bin/net
+
+[0m[33m
+[V] [0m[35mDependent program "rpcclient" found in /usr/bin/rpcclient
+
+[0m[33m
+[V] [0m[35mDependent program "smbclient" found in /usr/bin/smbclient
+
+[0m[33m
+[V] [0m[35mDependent program "polenum" found in /usr/bin/polenum
+
+[0m[33m
+[V] [0m[35mDependent program "ldapsearch" found in /usr/bin/ldapsearch
+
+[0mStarting enum4linux v0.9.0 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Wed Apr 21 21:16:41 2021
+
+[34m =========================================( [0m[32mTarget Information[0m[34m )=========================================
+
+[0mTarget ........... 10.10.10.100
+RID Range ........ 500-550,1000-1050
+Username ......... 'svc_tgs'
+Password ......... 'GPPstillStandingStrong2k18'
+Known Usernames .. administrator, guest, krbtgt, domain admins, root, bin, none
+
+
+[34m ============================( [0m[32mEnumerating Workgroup/Domain on 10.10.10.100[0m[34m )============================
+
+[0m[33m
+[V] [0m[35mAttempting to get domain name with command: nmblookup -A '10.10.10.100'
+
+[0m[33m
+[E] [0m[31mCan't find workgroup/domain
+
+[0m
+
+[34m ================================( [0m[32mNbtstat Information for 10.10.10.100[0m[34m )================================
+
+[0mLooking up status of 10.10.10.100
+No reply from 10.10.10.100
+
+[34m ===================================( [0m[32mSession Check on 10.10.10.100[0m[34m )===================================
+
+[0m[33m
+[V] [0m[35mAttempting to make null session using command: smbclient -W 'WORKGROUP' //'10.10.10.100'/ipc$ -U'svc_tgs'%'GPPstillStandingStrong2k18' -c 'help' 2>&1
+
+[0m[33m
+[+] [0m[32mServer 10.10.10.100 allows sessions using username 'svc_tgs', password 'GPPstillStandingStrong2k18'
+
+[0m
+[34m ================================( [0m[32mGetting domain SID for 10.10.10.100[0m[34m )================================
+
+[0m[33m
+[V] [0m[35mAttempting to get domain SID with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' 10.10.10.100 -c 'lsaquery' 2>&1
+
+[0mDomain Name: ACTIVE
+Domain Sid: S-1-5-21-405608879-3187717380-1996298813
+[33m
+[+] [0m[32mHost is part of a domain (not a workgroup)
+
+[0m
+[34m ===================================( [0m[32mOS information on 10.10.10.100[0m[34m )===================================
+
+[0m[33m
+[V] [0m[35mAttempting to get OS info with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/ipc$ -U'svc_tgs'%'GPPstillStandingStrong2k18' -c 'q' 2>&1
+
+[0m[33m
+[E] [0m[31mCan't get OS info with smbclient
+
+[0m[33m
+[V] [0m[35mAttempting to get OS info with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c 'srvinfo' '10.10.10.100' 2>&1
+
+[0m[33m
+[+] [0m[32mGot OS info for 10.10.10.100 from srvinfo: 
+[0m	10.10.10.100   Wk Sv PDC Tim NT     Domain Controller
+	platform_id     :	500
+	os version      :	6.1
+	server type     :	0x80102b
+
+
+[34m =======================================( [0m[32mUsers on 10.10.10.100[0m[34m )=======================================
+
+[0m[33m
+[V] [0m[35mAttempting to get userlist with command: rpcclient -W 'WORKGROUP' -c querydispinfo -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' 2>&1
+
+[0mindex: 0xdea RID: 0x1f4 acb: 0x00000210 Account: Administrator	Name: (null)	Desc: Built-in account for administering the computer/domain
+index: 0xdeb RID: 0x1f5 acb: 0x00000215 Account: Guest	Name: (null)	Desc: Built-in account for guest access to the computer/domain
+index: 0xe19 RID: 0x1f6 acb: 0x00020011 Account: krbtgt	Name: (null)	Desc: Key Distribution Center Service Account
+index: 0xeb2 RID: 0x44f acb: 0x00000210 Account: SVC_TGS	Name: SVC_TGS	Desc: (null)
+
+[33m
+[V] [0m[35mAttempting to get userlist with command: rpcclient -W 'WORKGROUP' -c enumdomusers -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' 2>&1
+
+[0muser:[Administrator] rid:[0x1f4]
+user:[Guest] rid:[0x1f5]
+user:[krbtgt] rid:[0x1f6]
+user:[SVC_TGS] rid:[0x44f]
+
+[34m =================================( [0m[32mShare Enumeration on 10.10.10.100[0m[34m )=================================
+
+[0m[33m
+[V] [0m[35mAttempting to get share list using authentication
+
+[0m
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+	NETLOGON        Disk      Logon server share 
+	Replication     Disk      
+	SYSVOL          Disk      Logon server share 
+	Users           Disk      
+SMB1 disabled -- no workgroup available
+[33m
+[+] [0m[32mAttempting to map shares on 10.10.10.100
+
+[0m[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/ADMIN$ with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'ADMIN$' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/ADMIN$	[35mMapping: [0mDENIED, Listing: N/A
+[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/C$ with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'C$' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/C$	[35mMapping: [0mDENIED, Listing: N/A
+[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/IPC$ with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'IPC$' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/IPC$	[33m
+[E] [0m[31mCan't understand response:
+
+[0mNT_STATUS_INVALID_PARAMETER listing \*
+[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/NETLOGON with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'NETLOGON' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/NETLOGON	[35mMapping: [0mOK[35mListing: [0mOK
+[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/Replication with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'Replication' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/Replication	[35mMapping: [0mOK[35mListing: [0mOK
+[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/SYSVOL with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'SYSVOL' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/SYSVOL	[35mMapping: [0mOK[35mListing: [0mOK
+[33m
+[V] [0m[35mAttempting map to share //10.10.10.100/Users with command: smbclient -W 'WORKGROUP' //'10.10.10.100'/'Users' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c dir 2>&1
+
+[0m//10.10.10.100/Users	[35mMapping: [0mOK[35mListing: [0mOK
+
+[34m ============================( [0m[32mPassword Policy Information for 10.10.10.100[0m[34m )============================
+
+[0m[33m
+[V] [0m[35mAttempting to get Password Policy info with command: polenum 'svc_tgs':'GPPstillStandingStrong2k18'@'10.10.10.100' 2>&1
+
+[0m
+
+[+] Attaching to 10.10.10.100 using svc_tgs:GPPstillStandingStrong2k18
+
+[+] Trying protocol 139/SMB...
+
+	[!] Protocol failed: Cannot request session (Called Name:10.10.10.100)
+
+[+] Trying protocol 445/SMB...
+
+[+] Found domain(s):
+
+	[+] ACTIVE
+	[+] Builtin
+
+[+] Password Info for Domain: ACTIVE
+
+	[+] Minimum password length: 7
+	[+] Password history length: 24
+	[+] Maximum password age: 41 days 23 hours 53 minutes 
+	[+] Password Complexity Flags: 000001
+
+		[+] Domain Refuse Password Change: 0
+		[+] Domain Password Store Cleartext: 0
+		[+] Domain Password Lockout Admins: 0
+		[+] Domain Password No Clear Change: 0
+		[+] Domain Password No Anon Change: 0
+		[+] Domain Password Complex: 1
+
+	[+] Minimum password age: 1 day 4 minutes 
+	[+] Reset Account Lockout Counter: 30 minutes 
+	[+] Locked Account Duration: 30 minutes 
+	[+] Account Lockout Threshold: None
+	[+] Forced Log off Time: Not Set
+
+[33m
+[V] [0m[35mAttempting to get Password Policy info with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c "getdompwinfo" 2>&1
+
+[0m
+[33m
+[+] [0m[32mRetieved partial password policy with rpcclient:
+
+
+[0mPassword Complexity: Enabled
+Minimum Password Length: 7
+
+
+[34m =======================================( [0m[32mGroups on 10.10.10.100[0m[34m )=======================================
+
+[0m[33m
+[V] [0m[35mGetting builtin groups with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'enumalsgroups builtin' 2>&1
+
+[0m[33m
+[+] [0m[32mGetting builtin groups:
+
+[0mgroup:[Server Operators] rid:[0x225]
+group:[Account Operators] rid:[0x224]
+group:[Pre-Windows 2000 Compatible Access] rid:[0x22a]
+group:[Incoming Forest Trust Builders] rid:[0x22d]
+group:[Windows Authorization Access Group] rid:[0x230]
+group:[Terminal Server License Servers] rid:[0x231]
+group:[Administrators] rid:[0x220]
+group:[Users] rid:[0x221]
+group:[Guests] rid:[0x222]
+group:[Print Operators] rid:[0x226]
+group:[Backup Operators] rid:[0x227]
+group:[Replicator] rid:[0x228]
+group:[Remote Desktop Users] rid:[0x22b]
+group:[Network Configuration Operators] rid:[0x22c]
+group:[Performance Monitor Users] rid:[0x22e]
+group:[Performance Log Users] rid:[0x22f]
+group:[Distributed COM Users] rid:[0x232]
+group:[IIS_IUSRS] rid:[0x238]
+group:[Cryptographic Operators] rid:[0x239]
+group:[Event Log Readers] rid:[0x23d]
+group:[Certificate Service DCOM Access] rid:[0x23e]
+[33m
+[+] [0m[32m Getting builtin group memberships:
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Certificate Service DCOM Access' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Performance Log Users' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Windows Authorization Access Group' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mWindows Authorization Access Group' (RID: 560) has member: NT AUTHORITY\ENTERPRISE DOMAIN CONTROLLERS
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Network Configuration Operators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Server Operators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Print Operators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Remote Desktop Users' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Incoming Forest Trust Builders' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Guests' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mGuests' (RID: 546) has member: ACTIVE\Guest
+[35mGroup: [0mGuests' (RID: 546) has member: ACTIVE\Domain Guests
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Pre-Windows 2000 Compatible Access' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mPre-Windows 2000 Compatible Access' (RID: 554) has member: NT AUTHORITY\Authenticated Users
+[33m
+[V] [0m[35mRunning command: net rpc group members 'IIS_IUSRS' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mIIS_IUSRS' (RID: 568) has member: NT AUTHORITY\IUSR
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Performance Monitor Users' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Event Log Readers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Backup Operators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Replicator' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Terminal Server License Servers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Cryptographic Operators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Administrators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mAdministrators' (RID: 544) has member: ACTIVE\Administrator
+[35mGroup: [0mAdministrators' (RID: 544) has member: ACTIVE\Enterprise Admins
+[35mGroup: [0mAdministrators' (RID: 544) has member: ACTIVE\Domain Admins
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Account Operators' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Users' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mUsers' (RID: 545) has member: NT AUTHORITY\INTERACTIVE
+[35mGroup: [0mUsers' (RID: 545) has member: NT AUTHORITY\Authenticated Users
+[35mGroup: [0mUsers' (RID: 545) has member: ACTIVE\Domain Users
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Distributed COM Users' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mGetting local groups with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'enumalsgroups domain' 2>&1
+
+[0m[33m
+[+] [0m[32m Getting local groups:
+
+[0mgroup:[Cert Publishers] rid:[0x205]
+group:[RAS and IAS Servers] rid:[0x229]
+group:[Allowed RODC Password Replication Group] rid:[0x23b]
+group:[Denied RODC Password Replication Group] rid:[0x23c]
+group:[DnsAdmins] rid:[0x44d]
+[33m
+[+] [0m[32m Getting local group memberships:
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Allowed RODC Password Replication Group' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Cert Publishers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'RAS and IAS Servers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Denied RODC Password Replication Group' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\krbtgt
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Domain Controllers
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Schema Admins
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Enterprise Admins
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Cert Publishers
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Domain Admins
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Group Policy Creator Owners
+[35mGroup: [0mDenied RODC Password Replication Group' (RID: 572) has member: ACTIVE\Read-only Domain Controllers
+[33m
+[V] [0m[35mRunning command: net rpc group members 'DnsAdmins' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mGetting domain groups with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c "enumdomgroups" 2>&1
+
+[0m[33m
+[+] [0m[32m Getting domain groups:
+
+[0mgroup:[Enterprise Read-only Domain Controllers] rid:[0x1f2]
+group:[Domain Admins] rid:[0x200]
+group:[Domain Users] rid:[0x201]
+group:[Domain Guests] rid:[0x202]
+group:[Domain Computers] rid:[0x203]
+group:[Domain Controllers] rid:[0x204]
+group:[Schema Admins] rid:[0x206]
+group:[Enterprise Admins] rid:[0x207]
+group:[Group Policy Creator Owners] rid:[0x208]
+group:[Read-only Domain Controllers] rid:[0x209]
+group:[DnsUpdateProxy] rid:[0x44e]
+[33m
+[+] [0m[32m Getting domain group memberships:
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Read-only Domain Controllers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Domain Controllers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Domain Controllers' (RID: 516) has member: ACTIVE\DC$
+[33m
+[V] [0m[35mRunning command: net rpc group members 'DnsUpdateProxy' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Group Policy Creator Owners' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Group Policy Creator Owners' (RID: 520) has member: ACTIVE\Administrator
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Domain Computers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Enterprise Read-only Domain Controllers' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[33m
+[V] [0m[35mRunning command: net rpc group members 'Domain Admins' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Domain Admins' (RID: 512) has member: ACTIVE\Administrator
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Domain Guests' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Domain Guests' (RID: 514) has member: ACTIVE\Guest
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Enterprise Admins' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Enterprise Admins' (RID: 519) has member: ACTIVE\Administrator
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Domain Users' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Domain Users' (RID: 513) has member: ACTIVE\Administrator
+[35mGroup: [0m'Domain Users' (RID: 513) has member: ACTIVE\krbtgt
+[35mGroup: [0m'Domain Users' (RID: 513) has member: ACTIVE\SVC_TGS
+[33m
+[V] [0m[35mRunning command: net rpc group members 'Schema Admins' -W 'WORKGROUP' -I '10.10.10.100' -U'svc_tgs'%'GPPstillStandingStrong2k18' 2>&1
+
+
+[0m[35mGroup: [0m'Schema Admins' (RID: 518) has member: ACTIVE\Administrator
+
+[34m ==================( [0m[32mUsers on 10.10.10.100 via RID cycling (RIDS: 500-550,1000-1050)[0m[34m )==================
+
+[0m[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames administrator' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "administrator" exists
+
+[0m[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames guest' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "guest" exists
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-21-405608879-3187717380-1996298813
+[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames krbtgt' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "krbtgt" exists
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-21-405608879-3187717380-1996298813
+[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames domain admins' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "domain admins" exists
+
+[0m[33m
+[V] [0m[35mUser "domain admins" doesn't exist.  User enumeration should be possible, but SID needed...
+
+[0m[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames root' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "root" exists
+
+[0m[33m
+[V] [0m[35mUser "root" doesn't exist.  User enumeration should be possible, but SID needed...
+
+[0m[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames bin' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "bin" exists
+
+[0m[33m
+[V] [0m[35mUser "bin" doesn't exist.  User enumeration should be possible, but SID needed...
+
+[0m[33m
+[V] [0m[35mAttempting to get SID from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c 'lookupnames none' 2>&1
+
+[0m[33m
+[V] [0m[35mAssuming that user "none" exists
+
+[0m[33m
+[V] [0m[35mAttempting to get SIDs from 10.10.10.100 with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' '10.10.10.100' -c lsaenumsid 2>&1
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-9
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-80-3139157870-2983391045-3678747466-658725712-1809340420
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-80-0
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-6
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-32-559
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-32-554
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-32-551
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-32-550
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-32-549
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-32-548
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-32-545
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-32-544
+
+[0m[33m
+[I] [0m[36mFound new SID: 
+[0mS-1-5-32
+[33m
+[V] [0m[35mProcessing SID S-1-5-20
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-19
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-5-11
+
+[0m[33m
+[V] [0m[35mProcessing SID S-1-1-0
+
+[0m[33m
+[+] [0m[32mEnumerating users using SID S-1-5-21-405608879-3187717380-1996298813 and logon username 'svc_tgs', password 'GPPstillStandingStrong2k18'
+
+[0mS-1-5-21-405608879-3187717380-1996298813-500 ACTIVE\Administrator (Local User)
+S-1-5-21-405608879-3187717380-1996298813-501 ACTIVE\Guest (Local User)
+S-1-5-21-405608879-3187717380-1996298813-502 ACTIVE\krbtgt (Local User)
+S-1-5-21-405608879-3187717380-1996298813-512 ACTIVE\Domain Admins (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-513 ACTIVE\Domain Users (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-514 ACTIVE\Domain Guests (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-515 ACTIVE\Domain Computers (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-516 ACTIVE\Domain Controllers (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-517 ACTIVE\Cert Publishers (Local Group)
+S-1-5-21-405608879-3187717380-1996298813-518 ACTIVE\Schema Admins (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-519 ACTIVE\Enterprise Admins (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-520 ACTIVE\Group Policy Creator Owners (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-521 ACTIVE\Read-only Domain Controllers (Domain Group)
+S-1-5-21-405608879-3187717380-1996298813-1000 ACTIVE\DC$ (Local User)
+[33m
+[+] [0m[32mEnumerating users using SID S-1-5-32 and logon username 'svc_tgs', password 'GPPstillStandingStrong2k18'
+
+[0mS-1-5-32-544 BUILTIN\Administrators (Local Group)
+S-1-5-32-545 BUILTIN\Users (Local Group)
+S-1-5-32-546 BUILTIN\Guests (Local Group)
+S-1-5-32-548 BUILTIN\Account Operators (Local Group)
+S-1-5-32-549 BUILTIN\Server Operators (Local Group)
+S-1-5-32-550 BUILTIN\Print Operators (Local Group)
+[33m
+[+] [0m[32mEnumerating users using SID S-1-5-80 and logon username 'svc_tgs', password 'GPPstillStandingStrong2k18'
+
+[0m[33m
+[+] [0m[32mEnumerating users using SID S-1-5-21-1621100029-2620511771-2725732389 and logon username 'svc_tgs', password 'GPPstillStandingStrong2k18'
+
+[0mS-1-5-21-1621100029-2620511771-2725732389-500 DC\Administrator (Local User)
+S-1-5-21-1621100029-2620511771-2725732389-501 DC\Guest (Local User)
+S-1-5-21-1621100029-2620511771-2725732389-513 DC\None (Domain Group)
+[33m
+[+] [0m[32mEnumerating users using SID S-1-5-80-3139157870-2983391045-3678747466-658725712 and logon username 'svc_tgs', password 'GPPstillStandingStrong2k18'
+
+[0m
+[34m ===============================( [0m[32mGetting printer info for 10.10.10.100[0m[34m )===============================
+
+[0m[33m
+[V] [0m[35mAttempting to get printer info with command: rpcclient -W 'WORKGROUP' -U'svc_tgs'%'GPPstillStandingStrong2k18' -c 'enumprinters' '10.10.10.100' 2>&1
+
+[0mCould not initialise spoolss. Error was NT_STATUS_OBJECT_NAME_NOT_FOUND
+
+
+enum4linux complete on Wed Apr 21 21:25:54 2021
+
